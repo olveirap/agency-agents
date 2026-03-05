@@ -23,11 +23,21 @@ Born from a Reddit thread and months of iteration, **The Agency** is a growing c
 
 ## ⚡ Quick Start
 
-### Option 1: Use with Claude Code (Recommended)
+### Option 1: Use with Antigravity / Gemini Code Assist (Recommended)
+
+1. **Local (Per-Project)**: Copy the `.agent` directory from the `gemini` folder to the root of your project environment.
+2. **Global**: Follow Antigravity guidelines to place the `.agent` skills mapping in your global settings directory.
+
+```bash
+# Copy Antigravity abilities locally to your current repository
+cp -r gemini/.agent ./
+```
+
+### Option 2: Use with Claude Code
 
 ```bash
 # Copy agents to your Claude Code directory
-cp -r agency-agents/* ~/.claude/agents/
+cp -r claude/* ~/.claude/agents/
 
 # Now activate any agent in your Claude Code sessions:
 # "Hey Claude, activate Frontend Developer mode and help me build a React component"
@@ -336,10 +346,11 @@ Special recognition to the 50+ Redditors who requested this within the first 12 
 ## 🚀 Get Started
 
 1. **Browse** the agents above and find specialists for your needs
-2. **Copy** the agents to `~/.claude/agents/` for Claude Code integration
-3. **Activate** agents by referencing them in your Claude conversations
-4. **Customize** agent personalities and workflows for your specific needs
-5. **Share** your results and contribute back to the community
+2. **Use with Antigravity**: Copy `gemini/.agent/` either directly into your local project root or your global configuration path.
+3. **Use with Claude**: Copy the files from `claude/` to `~/.claude/agents/` for Claude Code integration.
+4. **Activate** agents by referencing them in your AI sessions.
+5. **Customize** agent personalities and workflows for your specific needs.
+6. **Share** your results and contribute back to the community!
 
 ---
 

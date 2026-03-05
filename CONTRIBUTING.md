@@ -31,7 +31,11 @@ This project and everyone participating in it is governed by our Code of Conduct
 Have an idea for a specialized agent? Great! Here's how to add one:
 
 1. **Fork the repository**
-2. **Choose the appropriate category** (or propose a new one):
+2. **Choose the appropriate platform and category**:
+   - Claude agents are stored under the `claude/` directory
+   - Antigravity skills are generated into `gemini/.agent/skills/`
+   
+   Categories under `claude/` include:
    - `engineering/` - Software development specialists
    - `design/` - UX/UI and creative specialists
    - `marketing/` - Growth and marketing specialists
@@ -42,9 +46,13 @@ Have an idea for a specialized agent? Great! Here's how to add one:
    - `spatial-computing/` - AR/VR/XR specialists
    - `specialized/` - Unique specialists that don't fit elsewhere
 
-3. **Create your agent file** following the template below
-4. **Test your agent** in real scenarios
-5. **Submit a Pull Request** with your agent
+3. **Create your agent file** following the template below in the `claude/` directory.
+4. **Generate Antigravity Skills** using the `tools/transform_agents.py` script.
+   ```bash
+   python tools/transform_agents.py
+   ```
+5. **Test your agent** in real scenarios
+6. **Submit a Pull Request** with your agent
 
 ### 2. Improve Existing Agents
 
@@ -315,9 +323,9 @@ Contributors who make significant contributions will be:
 ### For New Contributors
 
 - [README.md](README.md) - Overview and agent catalog
-- [Example: Frontend Developer](engineering/engineering-frontend-developer.md) - Well-structured agent example
-- [Example: Reddit Community Builder](marketing/marketing-reddit-community-builder.md) - Great personality example
-- [Example: Whimsy Injector](design/design-whimsy-injector.md) - Creative specialist example
+- [Example: Frontend Developer](claude/engineering/engineering-frontend-developer.md) - Well-structured agent example
+- [Example: Reddit Community Builder](claude/marketing/marketing-reddit-community-builder.md) - Great personality example
+- [Example: Whimsy Injector](claude/design/design-whimsy-injector.md) - Creative specialist example
 
 ### For Agent Design
 
